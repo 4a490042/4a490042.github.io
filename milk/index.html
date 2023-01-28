@@ -1,54 +1,198 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="./jquery/jquery-3.3.0.min.js"></script>
- <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="./jquery/jquery-3.3.0.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
     <script type="text/javascript" src="./bootstrap/bootstrap.min.js"></script>
-    
-	
-	<title></title>
+    <title></title>
+    <style type="text/css">
+      #RightSlider{
+
+
+      }
+      .text-muted {
+
+        font-size: 25px;
+        text-align: center;
+      }
+      .card-body p {
+
+        font-size: 25px;
+        text-align: center;
+      }
+      .card-body{
+            border-width: 54px;
+    border-style: double;
+    border-color: antiquewhite;
+      }
+      .card-footer:last-child {
+     border-radius: 30px;
+        background-color: antiquewhite;
+      }
+    .card {
+        width: 300px;
+
+            border-radius: 30px;
+    margin-bottom: 3em;
+    }
+    </style>
 </head>
+
 <body>
-<div style="height: 250px;width: 250px;">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+    <div style="height: 100px;width: 100px;">
+        <div class="fixed-top">
+            <nav class="navbar" style="background-color: green;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="ex1"><img>甄農味商標放置處</span>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+                <div class="row">
+                    <div class="col-sm">
+                        關於我們
+                    </div>
+                    <div class="col-sm">
+                        優惠資訊
+                    </div>
+                    <div class="col-sm">
+                        產品櫥窗
+                    </div>
+                    <div class="col-sm">
+                        聯絡我們
+                    </div>
+                    <div class="col-sm">
+                        放FB、LINE
+                    </div>
+                </div>
+            </nav>
+            <div class="collapse" style="width: 25%;" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h5 class="text-white h4">Collapsed content</h5>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+            </div>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-
-</div>
+    </div>
+    <div style="margin-right:1%;margin-left: 1%;">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-All"  href="index.html" role="tab" aria-controls="home">所有商品</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list"  href="Main.html" role="tab" aria-controls="profile">義美食品</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">泰山飲料</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">波蜜果菜汁</a>
+                </div>
+            </div>
+            <!-- 側邊欄位 -->
+            <div class="col-md-9" id="RightSlider">
+                <div class="row">
+                  <div class="col-md-3">
+                        <div class="card">
+                            <img src="./img/Mike_01.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">崙背鮮乳</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-muted">140圓</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="./img/Mike_01.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">崙背鮮乳</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-muted">140圓</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                           <img src="./img/Mike_01.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">崙背鮮乳</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-muted">140元</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="./img/Mike_01.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">崙背鮮乳</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-muted">140元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                        <div class="card">
+                              <img src="./img/Mike_01.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">崙背鮮乳</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-muted">140元</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                             <img src="./img/Mike_01.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">崙背鮮乳</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-muted">140元</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                             <img src="./img/Mike_01.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">崙背鮮乳</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-muted">140元</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="./img/Mike_01.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">崙背鮮乳</p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="text-muted">140元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+   
+    </script>
 </body>
+
 </html>
