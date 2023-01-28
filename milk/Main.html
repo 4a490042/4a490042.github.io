@@ -268,14 +268,14 @@
 .element-item {
   position: relative;
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   margin: 5px;
   padding: 10px;
   /*background: #888;*/
    background: url(img/Mike_01.jpg);
   background-repeat: no-repeat;
-  background-size: 100px 100px;
+  background-size: calc(100%) calc(100% - 100% / 25);
   color: #262524;
 
 }
@@ -312,10 +312,14 @@
 }
 
 .element-item .weight {
-  position: absolute;
-  left: 10px;
-  top: 76px;
-  font-size: 12px;
+     background: white;
+    position: absolute;
+    left: 0px;
+    top: 182px;
+    font-size: 12px;
+    width: 100%;
+border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.7);
 
 }
 
@@ -343,12 +347,18 @@
 
 
 <div class="grid">
-  <div class="element-item transition metal "  data-category="transition" >
-    <h3 class="name">六甲鮮乳</h3>
+    
+        <div class="element-item transition metal "  data-category="transition" >
+
+        <h3 class="name">六甲鮮乳</h3>
    
-    <p class="number">150</p>
-    <p class="weight">127.6</p>
-  </div>
+         <p class="number">150</p>
+        <div class="weight">127.6</div>
+    
+        </div>
+        
+  
+  
   <div class="element-item metalloid " data-category="metalloid">
     <h3 class="name">Tellurium</h3>
     <p class="symbol">Te</p>
