@@ -116,7 +116,7 @@ $(document).ready(function() {
   }
 });
    $.ajax({
-  url: "json/Two.json",
+  url: "json/First.json",
   type: "GET",
   dataType: "json",
   success: function(Jdata) {
@@ -124,7 +124,7 @@ $(document).ready(function() {
      console.log(Jdata);
      for (var i = 0; i < Jdata.length; i++) {
 
-            tmp1 +=(" <div class=\"card\" style=\"width: 15rem;\"><img src=\"img/"+Jdata[i].name+".png\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">"+Jdata[i].title+"</h5></div></div>")
+            tmp1 +=(" <div class=\"card\" style=\"width: 20rem;\"><img src=\"img/"+Jdata[i].name+".png\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">"+Jdata[i].title+"</h5></div></div>")
         }
     $('#Two').html("<button class=\"btn btn-success\" onclick=\"Milk_Btn()\">查看更多</button><div class=\"slide-box\">"+tmp1+"</div>")
   },
