@@ -14,10 +14,7 @@
 #first,#Two {
   background-image: linear-gradient(to left, #008b8b, #ffff00);;
 }
-.card-img-top {
 
-    height: 100%;
-    }
 .card > img{
  object-fit: cover;
     border: 5px black solid;
@@ -106,7 +103,7 @@ $(document).ready(function() {
      
      for (var i = 0; i < Jdata.length; i++) {
 
-            tmp1 +=(" <div class=\"card\" style=\"width: 20rem;\"><img src=\"img/"+Jdata[i].name+".png\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">"+Jdata[i].title+"</h5></div></div>")
+            tmp1 +=(" <div class=\"card\" style=\"width: 20rem;\"><img src=\"img/"+Jdata[i].name+".png\" style=\"height: 100%;\"><div class=\"card-body\"><h5 class=\"card-title\">"+Jdata[i].title+"</h5></div></div>")
         }
     $('#First').html("<button class=\"btn btn-success\" onclick=\"Milk_Btn()\">查看更多</button><div class=\"slide-box\">"+tmp1+"</div>")
   },
@@ -124,7 +121,7 @@ $(document).ready(function() {
      console.log(Jdata);
      for (var i = 0; i < Jdata.length; i++) {
 
-            tmp1 +=(" <div class=\"card\" style=\"width: 20rem;\"><img src=\"img/"+Jdata[i].name+".png\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">"+Jdata[i].title+"</h5></div></div>")
+            tmp1 +=(" <div class=\"card\" style=\"width: 20rem;\"><img src=\"img/"+Jdata[i].name+".png\" style=\"height: 100%;\"><div class=\"card-body\"><h5 class=\"card-title\">"+Jdata[i].title+"</h5></div></div>")
         }
     $('#Two').html("<button class=\"btn btn-success\" onclick=\"Milk_Btn()\">查看更多</button><div class=\"slide-box\">"+tmp1+"</div>")
   },
@@ -142,7 +139,7 @@ $(document).ready(function() {
   success: function(Jdata) {
        var tmp ="";
         for (var i = 0; i < Jdata.length; i++) {
-            tmp +=("<div class=\"col-sm-4\"><div class=\"card\" style=\"height: 100%;\"><img src=\"img/"+Jdata[i].name+".png\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">"+Jdata[i].title+"</h5></div></div></div>")
+            tmp +=("<div class=\"col-sm-4\"><div class=\"card\" style=\"height: 100%;\"><img src=\"img/"+Jdata[i].name+".png\" style=\"height: 100%;\"><div class=\"card-body\"><h5 class=\"card-title\">"+Jdata[i].title+"</h5></div></div></div>")
         }
           alertify
             .alert(" <div class=\"slide-box1\"><div class=\"row\">"+tmp+"</div></div>");
