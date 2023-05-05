@@ -7,23 +7,80 @@
 <link rel="stylesheet" type="text/css" href="./css/alertify.core.css">
 <link rel="stylesheet" type="text/css" href="./css/alertify.default.css">
 <style type="text/css">
-   #Two button,#First button {
+    .alertify-buttons {
+        margin-top: 2%;
 
-        float: right;
+}   
+.alertify {
+    
+    background: #FFF;
+    width: 98%;
+    left: 1%;
+    border: 10px solid #FF0000; 
+    border: unset;
+    border-radius: 8px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.3);
+    -webkit-background-clip: padding;     /* Safari 4? Chrome 6? */
+       -moz-background-clip: padding;     /* Firefox 3.6 */
+            background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+    .float-button {
+
+position: fixed;
+height: 60px;
+width: 60px;
+bottom: 90px;
+right: 50px;
+}
+
+    body {
+        overflow: auto;
     }
-#first,#Two {
-  background-image: linear-gradient(to left, #008b8b, #ffff00);;
+#Chose button{
+    border: 0px;
+      font-weight: bold;
+    color: black;
+ background-image: linear-gradient(to bottom, #8ab7e9,white, #b7cb63);
+        border-radius: 25px;
+}
+    #All,#carouselExampleFade,#Chose{
+  margin-top: 1%;
+        margin-left: 1%;
+    margin-right: 1%;
+    }
+
+    .BlockTitle{
+        font-weight: bold;
+        font-size: 35px;
+        font-family: cursive;
+    }
+    p{
+    font-size: 25px;
+   font-weight: bold;
+   margin-bottom: 0px;
+    }
+   #Yogurt button,#Milk button,#AGV button,#Tarzan button,#Bomi button,#Order button,#Other button,#PreOrder button {
+
+        font-size: 25;
+        background-color: unset;
+        border: 0;
+        float: right;
+        font-family: cursive;
+    }
+#Milk,#Yogurt,#AGV,#Tarzan,#Bomi,#Order,#Other,#PreOrder {
+  background-image: linear-gradient(to bottom, #8ab7e9,white, #b7cb63);
 }
 
 .card > img{
-
+    border-radius: 30px;
     height: 100% !important;
  object-fit: cover;
-    border: 5px black solid;
+   /* border: 5px black solid;
     padding: 10px;
-        border-radius: 0px 0px 50% 50%;
+        border-radius: 0px 0px 50% 50%;*/
 }
 .card-body{
+    border-radius: 30px;
     background-color: peru;
 }
 .card-title{
@@ -31,6 +88,7 @@
     text-align: center;
 }
 .card{
+    border-radius: 100px;
     margin-right: 10px;
 }
    .slide-box{     
@@ -53,7 +111,7 @@
  .slide-box1{   
             overflow-x: hidden;
             overflow-y: auto;
-            height: 80%;
+            height: 85%;
            
         }
         /*去掉滾動條*/
@@ -64,13 +122,13 @@
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/test.jpg" class="d-block" style="width:100%;height:30%">
+      <img src="img/test.jpg" class="d-block" style="width:100%;height:20%">
     </div>
     <div class="carousel-item">
-      <img src="img/test.jpg" class="d-block" style="width:100%;height:30%">
+      <img src="img/test.jpg" class="d-block" style="width:100%;height:20%">
     </div>
     <div class="carousel-item">
-      <img src="img/test.jpg" class="d-block" style="width:100%;height:30%">
+      <img src="img/test.jpg" class="d-block" style="width:100%;height:20%">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -82,22 +140,51 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-<div id="First" style="display: block;height: auto; width: 100%;border:5px black solid;margin-top:10px;padding: 10px;border-radius: 35px;">
+<div id="Chose" style="display: block;height: auto; width: 100%;padding: 10px;border-radius: 35px;">
+    <button class="btn btn-primary" txt="All">全部</button>
+    <button class="btn btn-primary" txt="Milk">鮮乳</button>
+    <button class="btn btn-primary" txt="Yogurt">優格</button>
+    <button class="btn btn-primary" txt="AGV">愛之味</button>
+    <button class="btn btn-primary" txt="Tarzan">泰山</button>
+    <button class="btn btn-primary" txt="Bomi">波蜜</button>
+    <button class="btn btn-primary" txt="Order">下單區</button>
+    <button class="btn btn-primary" txt="PreOrder">預購區</button>
 
 </div>
- 
 
-<div id="Two" style="display: inline-block;height: auto; width: 100%;border:5px black solid;margin-top:10px;padding: 10px;border-radius: 35px;">
- 
+<div id="All">
+
+    <div id="Milk" style="display: block;height: auto; width: 100%;margin-top:10px;padding: 10px;border-radius: 35px;"></div>
+    <div id="Yogurt" style="display: inline-block;height: auto; width: 100%;margin-top:10px;padding: 10px;border-radius: 35px;"></div>
+    <div id="AGV" style="display: inline-block;height: auto; width: 100%;margin-top:10px;padding: 10px;border-radius: 35px;"></div>
+    <div id="Tarzan" style="display: inline-block;height: auto; width: 100%;margin-top:10px;padding: 10px;border-radius: 35px;"></div>
+    <div id="Bomi" style="display: inline-block;height: auto; width: 100%;margin-top:10px;padding: 10px;border-radius: 35px;"></div>
+    <div id="Order" style="display: inline-block;height: auto; width: 100%;margin-top:10px;padding: 10px;border-radius: 35px;"></div>
+     <div id="Other" style="display: inline-block;height: auto; width: 100%;margin-top:10px;padding: 10px;border-radius: 35px;"></div>
+       <div id="PreOrder" style="display: inline-block;height: auto; width: 100%;margin-top:10px;padding: 10px;border-radius: 35px;"></div>
 </div>
-
+ <img class="float-button" src="img/cow.png">
 <script type="text/javascript">
-
+$(window).scroll(
+        function() {
+            var scrollTop = $(this).scrollTop();
+            var scrollHeight = window.innerHeight
+            var windowHeight = $(this).height();
+            
+             
+            if (scrollTop + scrollHeight == windowHeight) {
+                
+                // 此处写滚动条到底部时候触发的事件
+               $(".float-button").show()
+            }else{
+                $(".float-button").hide()
+            }
+        }
+    );
 $(document).ready(function() {
 
     $.ajax({
-  url: "json/First.json",
+  url: "json/Milk.json",
   type: "GET",
   dataType: "json",
   success: function(Jdata) {
@@ -105,9 +192,9 @@ $(document).ready(function() {
      
      for (var i = 0; i < Jdata.length; i++) {
 
-            tmp1 +=(" <div class=\"card\" style=\"width: 20rem;\"><img src=\"img/"+Jdata[i].name+".jpg\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">"+Jdata[i].title+"</h5></div></div>")
+            tmp1 +=(" <div class=\"card\" style=\"width: 20rem;\"><img src=\"img/Milk/"+Jdata[i].name+".jpg\" class=\"card-img-top\"><div class=\"card-body\"><h3 class=\"card-title\">"+Jdata[i].title+"</h3><p>促銷價:&ensp;"+Jdata[i].price+"&ensp;&ensp;&ensp;庫存:&ensp;"+Jdata[i].stock+"</p> </div></div>")
         }
-    $('#First').html("<div>好好喝奶</div><button class=\"btn btn-success\" onclick=\"Milk_Btn()\">查看更多</button><div class=\"slide-box\">"+tmp1+"</div>")
+    $('#Milk').html("<div class=\"BlockTitle\">好好喝奶<button onclick=Milk_Btn('Milk')>查看更多</button></div><div class=\"slide-box\">"+tmp1+"</div>")
   },
   
   error: function() {
@@ -115,33 +202,180 @@ $(document).ready(function() {
   }
 });
    $.ajax({
-  url: "json/First.json",
+  url: "json/Yogurt.json",
   type: "GET",
   dataType: "json",
   success: function(Jdata) {
         var tmp1 ="";
-     console.log(Jdata);
+
      for (var i = 0; i < Jdata.length; i++) {
 
-            tmp1 +=(" <div class=\"card\" style=\"width: 20rem;\"><img src=\"img/"+Jdata[i].name+".jpg\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">"+Jdata[i].title+"</h5></div></div>")
+            tmp1 +=("<div class=\"card\" style=\"width: 20rem;\"><img src=\"img/Yogurt/"+Jdata[i].name+".jpg\" class=\"card-img-top\"><div class=\"card-body\"><h3 class=\"card-title\">"+Jdata[i].title+"</h3><p>促銷價:&ensp;"+Jdata[i].price+"&ensp;&ensp;&ensp;庫存:&ensp;"+Jdata[i].stock+"</p> </div></div>")
         }
-    $('#Two').html("<button class=\"btn btn-success\" onclick=\"Milk_Btn()\">查看更多</button><div class=\"slide-box\">"+tmp1+"</div>")
+    $('#Yogurt').html("<div class=\"BlockTitle\">格格給你讚<button onclick=Milk_Btn('Yogurt')>查看更多</button></div><div class=\"slide-box\">"+tmp1+"</div>")
   },
   
   error: function() {
     alert("ERROR!!!");
   }
 });
+ $.ajax({
+  url: "json/AGV.json",
+  type: "GET",
+  dataType: "json",
+  success: function(Jdata) {
+        var tmp1 ="";
+
+     for (var i = 0; i < Jdata.length; i++) {
+
+            tmp1 +=(" <div class=\"card\" style=\"width: 20rem;\"><img src=\"img/AGV/"+Jdata[i].name+".jpg\" class=\"card-img-top\"><div class=\"card-body\"><h3 class=\"card-title\">"+Jdata[i].title+"</h3><p>促銷價:&ensp;"+Jdata[i].price+"&ensp;&ensp;&ensp;庫存:&ensp;"+Jdata[i].stock+"</p> </div></div>")
+        }
+    $('#AGV').html("<div class=\"BlockTitle\">愛這個之味<button onclick=Milk_Btn('AGV')>查看更多</button></div><div class=\"slide-box\">"+tmp1+"</div>")
+  },
+  
+  error: function() {
+    alert("ERROR!!!");
+  }
 });
-   function Milk_Btn(argument) {
+$.ajax({
+  url: "json/Tarzan.json",
+  type: "GET",
+  dataType: "json",
+  success: function(Jdata) {
+        var tmp1 ="";
+ 
+     for (var i = 0; i < Jdata.length; i++) {
+
+            tmp1 +=("<div class=\"card\" style=\"width: 20rem;\"><img src=\"img/Tarzan/"+Jdata[i].name+".jpg\" class=\"card-img-top\"><div class=\"card-body\"><h3 class=\"card-title\">"+Jdata[i].title+"</h3><p>促銷價:&ensp;"+Jdata[i].price+"&ensp;&ensp;&ensp;庫存:&ensp;"+Jdata[i].stock+"</p> </div></div>")
+        }
+    $('#Tarzan').html("<div class=\"BlockTitle\">穩如泰山<button onclick=Milk_Btn('Tarzan')>查看更多</button></div><div class=\"slide-box\">"+tmp1+"</div>")
+  },
+  
+  error: function() {
+    alert("ERROR!!!");
+  }
+});
+$.ajax({
+  url: "json/Bomi.json",
+  type: "GET",
+  dataType: "json",
+  success: function(Jdata) {
+        var tmp1 ="";
+
+     for (var i = 0; i < Jdata.length; i++) {
+
+            tmp1 +=("<div class=\"card\" style=\"width: 20rem;\"><img src=\"img/Bomi/"+Jdata[i].name+".jpg\" class=\"card-img-top\"><div class=\"card-body\"><h3 class=\"card-title\">"+Jdata[i].title+"</h3><p>促銷價:&ensp;"+Jdata[i].price+"&ensp;&ensp;&ensp;庫存:&ensp;"+Jdata[i].stock+"</p> </div></div>")
+        }
+    $('#Bomi').html("<div class=\"BlockTitle\">健康好生活<button onclick=Milk_Btn('Bomi')>查看更多</button></div><div class=\"slide-box\">"+tmp1+"</div>")
+  },
+  
+  error: function() {
+    alert("ERROR!!!");
+  }
+});
+$.ajax({
+  url: "json/Order.json",
+  type: "GET",
+  dataType: "json",
+  success: function(Jdata) {
+        var tmp1 ="";
+      
+     for (var i = 0; i < Jdata.length; i++) {
+
+            tmp1 +=("<div class=\"card\" style=\"width: 20rem;\"><img src=\"img/Order/"+Jdata[i].name+".jpg\" class=\"card-img-top\"><div class=\"card-body\"><h3 class=\"card-title\">"+Jdata[i].title+"</h3><p>促銷價:&ensp;"+Jdata[i].price+"&ensp;&ensp;&ensp;庫存:&ensp;"+Jdata[i].stock+"</p> </div></div>")
+        }
+    $('#Order').html("<div class=\"BlockTitle\">今天訂 明天領甄方便<button onclick=Milk_Btn('Order')>查看更多</button></div><div class=\"slide-box\">"+tmp1+"</div>")
+  },
+  
+  error: function() {
+    alert("ERROR!!!");
+  }
+});
+
+$.ajax({
+  url: "json/Other.json",
+  type: "GET",
+  dataType: "json",
+  success: function(Jdata) {
+        var tmp1 ="";
+      
+     for (var i = 0; i < Jdata.length; i++) {
+
+            tmp1 +=("<div class=\"card\" style=\"width: 20rem;\"><img src=\"img/Other/"+Jdata[i].name+".jpg\" class=\"card-img-top\"><div class=\"card-body\"><h3 class=\"card-title\">"+Jdata[i].title+"</h3><p>促銷價:&ensp;"+Jdata[i].price+"&ensp;&ensp;&ensp;庫存:&ensp;"+Jdata[i].stock+"</p> </div></div>")
+        }
+    $('#Other').html("<div class=\"BlockTitle\">乾貨<button onclick=Milk_Btn('Other')>查看更多</button></div><div class=\"slide-box\">"+tmp1+"</div>")
+  },
+  
+  error: function() {
+    alert("ERROR!!!");
+  }
+});
+
+});
+ $.ajax({
+  url: "json/PreOrder.json",
+  type: "GET",
+  dataType: "json",
+  success: function(Jdata) {
+     var tmp1 ="";
+     
+     for (var i = 0; i < Jdata.length; i++) {
+
+            tmp1 +=(" <div class=\"card\" style=\"width: 20rem;\"><img src=\"img/PreOrder/"+Jdata[i].name+".jpg\" class=\"card-img-top\"><div class=\"card-body\"><h3 class=\"card-title\">"+Jdata[i].title+"</h3><p style=\"text-align: center;\">促銷價:&ensp;"+Jdata[i].price+"<br/>到貨日:&ensp;"+Jdata[i].stock+"</p> </div></div>")
+        }
+    $('#PreOrder').html("<div class=\"BlockTitle\">預購區<button onclick=Milk_Btn('PreOrder')>查看更多</button></div><div class=\"slide-box\">"+tmp1+"</div>")
+  },
+  
+  error: function() {
+    alert("ERROR!!!");
+  }
+});
+
+
+
+
+  $(".float-button").on("click", function (event) {
+    $("html, body").animate(
+      {
+        scrollTop: 0
+      },
+      500 // 回頂部時間為 500 毫秒
+    );
+  });
+
+$("#Chose button").on("click", function (event) {
+    var tmp = $(this).attr('txt');
+    var all = $('#All').children().length;
+   $('#All').children().fadeOut(300)
+   if (tmp == "All") {
+
+    $('#All').children().fadeIn(300);
+   }else{
+for (var i = 0; i < all; i++) {
+         
+       if (tmp == $($('#All').children()[i]).attr('id')) {
+ 
+
+        $($('#All').children()[i]).fadeIn(300);
+       }
+    }
+
+   }
+    
+    
+  });
+
+
+   function Milk_Btn(JsonName) {
+
        $.ajax({
-  url: "json/First.json",
+  url: "json/"+JsonName+".json",
   type: "GET",
   dataType: "json",
   success: function(Jdata) {
        var tmp ="";
         for (var i = 0; i < Jdata.length; i++) {
-            tmp +=("<div class=\"col-sm-4\"><div class=\"card\"><img src=\"img/"+Jdata[i].name+".jpg\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">"+Jdata[i].title+"</h5></div></div></div>")
+            tmp +=("<div class=\"col-sm-3\"><div class=\"card\"><img src=\"img/"+JsonName+"/"+Jdata[i].name+".jpg\" class=\"card-img-top\"><div class=\"card-body\"><h4 class=\"card-title\">"+Jdata[i].title+"</h4> <p>促銷價"+Jdata[i].price+"</p></div></div></div>")
         }
           alertify
             .alert(" <div class=\"slide-box1\"><div class=\"row\">"+tmp+"</div></div>");
