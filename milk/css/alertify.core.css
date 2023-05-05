@@ -84,6 +84,7 @@
 		opacity: 0;
 	}
 	.alertify-dialog {
+		 background-color: #80808021;
 		padding: 25px;
 	}
 		.alertify-resetFocus {
