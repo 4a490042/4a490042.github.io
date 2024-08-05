@@ -1,0 +1,13 @@
+[
+    {"name":"Cool_01","title":"秋雅-870ml","price":"55","stock":"0"},
+    {"name":"Cool_02","title":"秋雅-290ml","price":"25","stock":"0"},
+    {"name":"Cool_03","title":"純萃咖啡(重乳)","price":"30","stock":"0"},
+    {"name":"Cool_04","title":"純萃咖啡(曼特寧)","price":"30","stock":"0"},
+    {"name":"Cool_05","title":"純萃咖啡(奶茶)","price":"30","stock":"0"},
+    {"name":"Cool_10","title":"卡打車","price":"30","stock":"0"},
+    {"name":"Cool_06","title":"有茗氣(低卡檸檬蘋果)","price":"35","stock":"0"}, 
+    {"name":"Cool_07","title":"有茗氣(白桃蘋果綠茶)","price":"35","stock":"0"},
+    {"name":"Cool_08","title":"More芭樂檸檬綠茶","price":"80","stock":"0"},
+    {"name":"Cool_09","title":"More甜橙百香","price":"80","stock":"0"}
+
+]

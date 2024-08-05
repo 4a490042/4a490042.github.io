@@ -1,0 +1,15 @@
+[
+    {"name":"Milk_02","title":"柳營鮮乳-1837ml","price":"150","stock":"0"},
+    {"name":"Milk_06","title":"柳營鮮乳-936ml","price":"80","stock":"0"},
+    {"name":"Milk_01","title":"六甲田莊鮮乳-1837ml","price":"150","stock":"0"},
+    {"name":"Milk_07","title":"六甲田莊鮮乳-936ml","price":"80","stock":"0"},
+    {"name":"Milk_03","title":"崙背鮮乳-1837ml","price":"160","stock":"3"},
+    {"name":"Milk_08","title":"崙背鮮乳-936ml","price":"85","stock":"2"},
+    {"name":"Milk_04","title":"禾香鮮乳-1837ml","price":"160","stock":"0"},
+    {"name":"Milk_09","title":"禾香鮮乳-936ml","price":"85","stock":"0"},
+    {"name":"Milk_05","title":"文雅鮮乳-936ml","price":"85","stock":"0"},
+    {"name":"Milk_10","title":"水沙連-936ml","price":"70","stock":"0"},
+    {"name":"Milk_13","title":"巧克力牛乳-936ml","price":"60","stock":"0"},
+    {"name":"Milk_14","title":"六甲咖啡牛乳-936ml","price":"60","stock":"0"}
+    
+ ]
