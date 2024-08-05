@@ -1,7 +1,7 @@
 [
     {"name":"Popular_01","title":"六甲奶油布蕾","price":"20","stock":"0"},
-    {"name":"Popular_02","title":"六甲饅頭(起司)","price":"60","stock":"0"},
-    {"name":"Popular_03","title":"六甲饅頭(牛奶)","price":"60","stock":"0"},
+    {"name":"Popular_02","title":"六甲饅頭(牛奶)","price":"60","stock":"0"},
+    {"name":"Popular_03","title":"六甲饅頭(起司)","price":"60","stock":"0"},
     {"name":"Popular_04","title":"植物的優(草莓)","price":"55","stock":"0"},
     {"name":"Popular_05","title":"植物的優(橘子)","price":"55","stock":"0"},
     {"name":"Popular_06","title":"植物的優(芒果)","price":"55","stock":"0"},
